@@ -14,6 +14,7 @@ import AppMainSection2 from './components/AppMainSection2.vue'
 <template>
   <AppHeader />
   <AppMainSection1 />
+  <AppMainSection2 />
 </template>
 
 <style lang="scss" scoped>
