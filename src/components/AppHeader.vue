@@ -34,7 +34,6 @@ export default {
   align-items: center;
   height: 150px;
   text-align: center;
-  border: 2px dashed red;
 };
 .containerLogoHeader{
   width: 40%;
