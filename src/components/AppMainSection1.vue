@@ -85,26 +85,78 @@ export default {
 <template>
     <div class="ContainerSection">
         <div class="ContainerContent">
-            Content Goes Here!
+            <div class="card" v-for="(comic, index) in comics">
+                <div class="imgCard">
+                    <img :src="comics[index].thumb" :alt="comics[index].series">
+                </div>
+                <div class="titoloCard">
+                    {{ comics[index].series }}
+                </div>
+            </div>
+        </div>
+        <div class="btnLoadMore">
+            <button>
+                LOAD MORE
+            </button>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
 .ContainerSection {
-    height: 150px;
+    height: 800px;
     width: 100%;
-    display: flex;
-    align-items: center;
+    padding-top: 40px;
     background-color: #1c1c1c;
+
+    .btnLoadMore {
+        text-align: center;
+        padding-bottom: 20px;
+
+        button {
+            background-color: #0282f9;
+            width: 250px;
+            height: 50px;
+            color: white;
+            font-size: 1.2em;
+            border-color: transparent;
+        }
+    }
 
     .ContainerContent {
         color: white;
-        width: 50%;
+        background-color: #1c1c1c;
+        width: 80%;
+        height: 700px;
+        margin: 0 auto;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.2em;
         font-weight: bold;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .card {
+            width: calc(90% / 6);
+            height: calc(80% / 2);
+
+            .imgCard {
+                height: 80%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+
+            .titoloCard {
+                height: 20%;
+                padding-top: 7px;
+                text-align: left;
+            }
+        }
     }
 }
-
 </style>

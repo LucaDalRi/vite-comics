@@ -1,7 +1,7 @@
 <script>
 
 export default {
-  name: 'AppMainSection2',
+    name: 'AppMainSection2',
 }
 
 </script>
@@ -34,31 +34,34 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.containerSection2{
+.containerSection2 {
     height: 150px;
     background-color: #0282f9;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
-    & .containerIconeLinks{
+    justify-content: space-evenly;
+
+    .containerIconeLinks {
         display: flex;
         width: 80%;
         height: 100%;
         font-size: 1.5em;
-        & :last-child img{
+
+        :last-child img {
             width: 30%;
         }
-        & .link{
+
+        .link {
             display: flex;
             align-items: center;
             width: calc(100% / 5);
-            & img{
+
+            img {
                 height: 50%;
                 margin-right: 20px;
-            };
-        };
-    };
-};
-
+            }
+        }
+    }
+}
 </style>

@@ -29,35 +29,40 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.containerHeader{
+.containerHeader {
   display: flex;
   align-items: center;
   height: 150px;
   text-align: center;
-};
-.containerLogoHeader{
+}
+
+.containerLogoHeader {
   width: 40%;
-};
-  
-.containerLinksHeader{
+}
+
+.containerLinksHeader {
   width: 60%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  & ul{
+
+  ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    & li a{
+
+    li a {
       text-decoration: none;
       color: rgb(0, 0, 0);
       margin: 0 20px;
-      &.active{
-        color: rgb(29, 79, 218);
-      };
-    };
-  };
-};
 
+      .active {
+        color: rgb(29, 79, 218);
+      }
+    }
+
+  }
+
+}
 </style>
