@@ -1,5 +1,6 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
 import AppMainSection1 from './components/AppMainSection1.vue';
 import AppMainSection2 from './components/AppMainSection2.vue'
 import AppFooterSection1 from './components/AppFooterSection1.vue';
@@ -13,6 +14,7 @@ export default {
     AppMainSection2,
     AppFooterSection1,
     AppFooterSection2,
+    AppJumbotron,
 
   }
 };
@@ -20,6 +22,7 @@ export default {
 
 <template>
   <AppHeader />
+  <AppJumbotron />
   <AppMainSection1 />
   <AppMainSection2 />
   <AppFooterSection1/>
